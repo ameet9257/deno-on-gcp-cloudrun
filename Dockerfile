@@ -11,5 +11,5 @@ WORKDIR /usr/src/app
 
 COPY . /usr/src/app
 
-EXPOSE 8000
+EXPOSE ENV PORT 8080
 CMD ["deno", "run", "--allow-net", "--allow-env", "index.ts"]
