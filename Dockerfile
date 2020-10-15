@@ -11,5 +11,5 @@ WORKDIR /usr/src/app
 
 COPY . /usr/src/app
 
-EXPOSE $PORT
+EXPOSE 8000
 CMD ["deno", "run", "--allow-net", "--allow-env", "index.ts"]
